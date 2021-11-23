@@ -30,7 +30,6 @@ namespace Projeto_Integrador_Construção_do_Sistema
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
@@ -55,7 +54,6 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.DarkCyan;
-            this.panelMenu.Controls.Add(this.iconButton4);
             this.panelMenu.Controls.Add(this.iconButton3);
             this.panelMenu.Controls.Add(this.iconButton2);
             this.panelMenu.Controls.Add(this.iconButton1);
@@ -63,31 +61,8 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 566);
+            this.panelMenu.Size = new System.Drawing.Size(220, 646);
             this.panelMenu.TabIndex = 2;
-            // 
-            // iconButton4
-            // 
-            this.iconButton4.BackColor = System.Drawing.Color.DarkCyan;
-            this.iconButton4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.ForeColor = System.Drawing.Color.White;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.FileAlt;
-            this.iconButton4.IconColor = System.Drawing.Color.White;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.IconSize = 32;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(0, 320);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton4.Size = new System.Drawing.Size(220, 60);
-            this.iconButton4.TabIndex = 5;
-            this.iconButton4.Text = "Relatorio";
-            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton4.UseVisualStyleBackColor = false;
-            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
             // 
             // iconButton3
             // 
@@ -208,7 +183,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(748, 75);
+            this.panelTitleBar.Size = new System.Drawing.Size(857, 75);
             this.panelTitleBar.TabIndex = 8;
             // 
             // panelShadow
@@ -217,7 +192,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(220, 75);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(748, 9);
+            this.panelShadow.Size = new System.Drawing.Size(857, 9);
             this.panelShadow.TabIndex = 9;
             // 
             // panelDesktop
@@ -228,35 +203,35 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 84);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(748, 482);
+            this.panelDesktop.Size = new System.Drawing.Size(857, 562);
             this.panelDesktop.TabIndex = 10;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Square721 BT", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(187, 354);
+            this.label1.Location = new System.Drawing.Point(252, 400);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(369, 42);
-            this.label1.TabIndex = 3;
+            this.label1.TabIndex = 7;
             this.label1.Text = "SISTEMA BIRDWARE";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.LightCyan;
             this.pictureBox1.Image = global::Projeto_Integrador_Construção_do_Sistema.Properties.Resources.logoBD;
-            this.pictureBox1.Location = new System.Drawing.Point(247, 66);
+            this.pictureBox1.Location = new System.Drawing.Point(311, 116);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(254, 256);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(968, 566);
+            this.ClientSize = new System.Drawing.Size(1077, 646);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
@@ -287,9 +262,8 @@ namespace Projeto_Integrador_Construção_do_Sistema
         private System.Windows.Forms.Label lblTitleChildForm;
         private System.Windows.Forms.Panel panelTitleBar;
         private System.Windows.Forms.Panel panelShadow;
-        private System.Windows.Forms.Panel panelDesktop;
-        private FontAwesome.Sharp.IconButton iconButton4;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

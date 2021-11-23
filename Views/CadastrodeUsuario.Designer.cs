@@ -48,7 +48,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(86, 17);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(97, 25);
@@ -66,7 +66,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(57, 185);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 15);
@@ -100,7 +100,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // labelNomeCliente
             // 
             this.labelNomeCliente.AutoSize = true;
-            this.labelNomeCliente.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelNomeCliente.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelNomeCliente.Location = new System.Drawing.Point(57, 99);
             this.labelNomeCliente.Name = "labelNomeCliente";
             this.labelNomeCliente.Size = new System.Drawing.Size(43, 15);
@@ -110,7 +110,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // labelTelefone
             // 
             this.labelTelefone.AutoSize = true;
-            this.labelTelefone.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelTelefone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelTelefone.Location = new System.Drawing.Point(57, 147);
             this.labelTelefone.Name = "labelTelefone";
             this.labelTelefone.Size = new System.Drawing.Size(54, 15);
@@ -120,7 +120,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // labelID
             // 
             this.labelID.AutoSize = true;
-            this.labelID.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelID.Location = new System.Drawing.Point(57, 52);
             this.labelID.Name = "labelID";
             this.labelID.Size = new System.Drawing.Size(21, 15);
@@ -129,7 +129,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(117, 259);
+            this.button1.Location = new System.Drawing.Point(149, 259);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 47;
@@ -147,7 +147,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // labelconfirmasenha
             // 
             this.labelconfirmasenha.AutoSize = true;
-            this.labelconfirmasenha.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelconfirmasenha.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelconfirmasenha.Location = new System.Drawing.Point(57, 230);
             this.labelconfirmasenha.Name = "labelconfirmasenha";
             this.labelconfirmasenha.Size = new System.Drawing.Size(95, 15);
@@ -156,7 +156,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             // buttonLogin
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(3, 259);
+            this.buttonLogin.Location = new System.Drawing.Point(35, 259);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(75, 23);
             this.buttonLogin.TabIndex = 59;
@@ -168,7 +168,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(307, 294);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.textBox1);
