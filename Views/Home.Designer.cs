@@ -30,6 +30,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.iconButtonFinalizar = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
@@ -54,6 +55,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.DarkCyan;
+            this.panelMenu.Controls.Add(this.iconButtonFinalizar);
             this.panelMenu.Controls.Add(this.iconButton3);
             this.panelMenu.Controls.Add(this.iconButton2);
             this.panelMenu.Controls.Add(this.iconButton1);
@@ -63,6 +65,29 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 646);
             this.panelMenu.TabIndex = 2;
+            // 
+            // iconButtonFinalizar
+            // 
+            this.iconButtonFinalizar.BackColor = System.Drawing.Color.DarkCyan;
+            this.iconButtonFinalizar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.iconButtonFinalizar.FlatAppearance.BorderSize = 0;
+            this.iconButtonFinalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonFinalizar.ForeColor = System.Drawing.Color.White;
+            this.iconButtonFinalizar.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
+            this.iconButtonFinalizar.IconColor = System.Drawing.Color.White;
+            this.iconButtonFinalizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonFinalizar.IconSize = 32;
+            this.iconButtonFinalizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonFinalizar.Location = new System.Drawing.Point(0, 586);
+            this.iconButtonFinalizar.Name = "iconButtonFinalizar";
+            this.iconButtonFinalizar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButtonFinalizar.Size = new System.Drawing.Size(220, 60);
+            this.iconButtonFinalizar.TabIndex = 5;
+            this.iconButtonFinalizar.Text = "Finalizar";
+            this.iconButtonFinalizar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonFinalizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButtonFinalizar.UseVisualStyleBackColor = false;
+            this.iconButtonFinalizar.Click += new System.EventHandler(this.iconButtonFinalizar_Click);
             // 
             // iconButton3
             // 
@@ -266,5 +291,6 @@ namespace Projeto_Integrador_Construção_do_Sistema
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private FontAwesome.Sharp.IconButton iconButtonFinalizar;
     }
 }

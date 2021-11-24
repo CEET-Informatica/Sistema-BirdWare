@@ -132,6 +132,12 @@ namespace Projeto_Integrador_Construção_do_Sistema
             lblTitleChildForm.Text = "Home";
         }
 
+       
+        private void iconButtonFinalizar_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColor.color5);
+        }
+
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -144,6 +150,5 @@ namespace Projeto_Integrador_Construção_do_Sistema
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-   
     }
 }

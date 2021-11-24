@@ -30,10 +30,11 @@ namespace Projeto_Integrador_Construção_do_Sistema
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonEmitirRelatorio = new System.Windows.Forms.Button();
             this.buttonGravarGeral = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.buttonExcluir = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,31 +45,31 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.ColumnCustoMedio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Columnornecedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonAtualizar = new System.Windows.Forms.Button();
+            this.buttonEditar = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textNomegeral = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxManterpreco = new System.Windows.Forms.CheckBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.checkManterPreco1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxManterpreco2 = new System.Windows.Forms.CheckBox();
+            this.textIDForncGeral = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textFornecedorGeral = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textCustomedioGeral = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textValortotalGeral = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboUDMGeral = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textQuantidadeGeral = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textMarcaGeral = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textDescGeral = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textIDgeral = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label12 = new System.Windows.Forms.Label();
@@ -99,7 +100,6 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonExcluir = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -111,7 +111,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.buttonEmitirRelatorio);
             this.panel1.Controls.Add(this.buttonGravarGeral);
             this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Location = new System.Drawing.Point(3, 12);
@@ -119,14 +119,15 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.panel1.Size = new System.Drawing.Size(868, 516);
             this.panel1.TabIndex = 0;
             // 
-            // button1
+            // buttonEmitirRelatorio
             // 
-            this.button1.Location = new System.Drawing.Point(732, 491);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 22);
-            this.button1.TabIndex = 52;
-            this.button1.Text = "Emitir Relatório";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonEmitirRelatorio.Location = new System.Drawing.Point(732, 491);
+            this.buttonEmitirRelatorio.Name = "buttonEmitirRelatorio";
+            this.buttonEmitirRelatorio.Size = new System.Drawing.Size(98, 22);
+            this.buttonEmitirRelatorio.TabIndex = 52;
+            this.buttonEmitirRelatorio.Text = "Emitir Relatório";
+            this.buttonEmitirRelatorio.UseVisualStyleBackColor = true;
+            this.buttonEmitirRelatorio.Click += new System.EventHandler(this.buttonEmitirRelatorio_Click);
             // 
             // buttonGravarGeral
             // 
@@ -136,6 +137,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.buttonGravarGeral.TabIndex = 60;
             this.buttonGravarGeral.Text = "Gravar";
             this.buttonGravarGeral.UseVisualStyleBackColor = true;
+            this.buttonGravarGeral.Click += new System.EventHandler(this.buttonGravarGeral_Click);
             // 
             // tabControl1
             // 
@@ -156,31 +158,31 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.tabPage1.Controls.Add(this.buttonExcluir);
             this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.buttonAtualizar);
+            this.tabPage1.Controls.Add(this.buttonEditar);
             this.tabPage1.Controls.Add(this.panel4);
             this.tabPage1.Controls.Add(this.panel5);
-            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.textNomegeral);
             this.tabPage1.Controls.Add(this.label13);
-            this.tabPage1.Controls.Add(this.checkBox1);
-            this.tabPage1.Controls.Add(this.checkBoxManterpreco);
-            this.tabPage1.Controls.Add(this.textBox3);
+            this.tabPage1.Controls.Add(this.checkManterPreco1);
+            this.tabPage1.Controls.Add(this.checkBoxManterpreco2);
+            this.tabPage1.Controls.Add(this.textIDForncGeral);
             this.tabPage1.Controls.Add(this.label14);
-            this.tabPage1.Controls.Add(this.textBox4);
+            this.tabPage1.Controls.Add(this.textFornecedorGeral);
             this.tabPage1.Controls.Add(this.label15);
-            this.tabPage1.Controls.Add(this.textBox5);
+            this.tabPage1.Controls.Add(this.textCustomedioGeral);
             this.tabPage1.Controls.Add(this.label16);
-            this.tabPage1.Controls.Add(this.textBox6);
+            this.tabPage1.Controls.Add(this.textValortotalGeral);
             this.tabPage1.Controls.Add(this.label17);
-            this.tabPage1.Controls.Add(this.comboBox1);
+            this.tabPage1.Controls.Add(this.comboUDMGeral);
             this.tabPage1.Controls.Add(this.label18);
-            this.tabPage1.Controls.Add(this.textBox7);
+            this.tabPage1.Controls.Add(this.textQuantidadeGeral);
             this.tabPage1.Controls.Add(this.label19);
-            this.tabPage1.Controls.Add(this.textBox8);
+            this.tabPage1.Controls.Add(this.textMarcaGeral);
             this.tabPage1.Controls.Add(this.label20);
-            this.tabPage1.Controls.Add(this.textBox9);
+            this.tabPage1.Controls.Add(this.textDescGeral);
             this.tabPage1.Controls.Add(this.label21);
-            this.tabPage1.Controls.Add(this.textBox10);
+            this.tabPage1.Controls.Add(this.textIDgeral);
             this.tabPage1.Controls.Add(this.label22);
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
@@ -188,6 +190,16 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.tabPage1.Size = new System.Drawing.Size(852, 457);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Info. Gerais";
+            // 
+            // buttonExcluir
+            // 
+            this.buttonExcluir.Location = new System.Drawing.Point(189, 245);
+            this.buttonExcluir.Name = "buttonExcluir";
+            this.buttonExcluir.Size = new System.Drawing.Size(75, 23);
+            this.buttonExcluir.TabIndex = 61;
+            this.buttonExcluir.Text = "Excluir";
+            this.buttonExcluir.UseVisualStyleBackColor = true;
+            this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
             // 
             // pictureBox1
             // 
@@ -259,23 +271,25 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.Columnornecedor.HeaderText = "Fornecedor";
             this.Columnornecedor.Name = "Columnornecedor";
             // 
-            // button3
+            // buttonAtualizar
             // 
-            this.button3.Location = new System.Drawing.Point(108, 245);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 58;
-            this.button3.Text = "Atualizar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonAtualizar.Location = new System.Drawing.Point(108, 245);
+            this.buttonAtualizar.Name = "buttonAtualizar";
+            this.buttonAtualizar.Size = new System.Drawing.Size(75, 23);
+            this.buttonAtualizar.TabIndex = 58;
+            this.buttonAtualizar.Text = "Atualizar";
+            this.buttonAtualizar.UseVisualStyleBackColor = true;
+            this.buttonAtualizar.Click += new System.EventHandler(this.buttonAtualizar_Click);
             // 
-            // button2
+            // buttonEditar
             // 
-            this.button2.Location = new System.Drawing.Point(28, 245);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 57;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonEditar.Location = new System.Drawing.Point(28, 245);
+            this.buttonEditar.Name = "buttonEditar";
+            this.buttonEditar.Size = new System.Drawing.Size(75, 23);
+            this.buttonEditar.TabIndex = 57;
+            this.buttonEditar.Text = "Editar";
+            this.buttonEditar.UseVisualStyleBackColor = true;
+            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
             // panel4
             // 
@@ -293,12 +307,12 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.panel5.Size = new System.Drawing.Size(862, 10);
             this.panel5.TabIndex = 55;
             // 
-            // textBox2
+            // textNomegeral
             // 
-            this.textBox2.Location = new System.Drawing.Point(108, 41);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 54;
+            this.textNomegeral.Location = new System.Drawing.Point(108, 41);
+            this.textNomegeral.Name = "textNomegeral";
+            this.textNomegeral.Size = new System.Drawing.Size(100, 23);
+            this.textNomegeral.TabIndex = 54;
             // 
             // label13
             // 
@@ -310,34 +324,34 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.label13.TabIndex = 53;
             this.label13.Text = "Nome";
             // 
-            // checkBox1
+            // checkManterPreco1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox1.Location = new System.Drawing.Point(220, 156);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(100, 19);
-            this.checkBox1.TabIndex = 42;
-            this.checkBox1.Text = "Manter Preço ";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkManterPreco1.AutoSize = true;
+            this.checkManterPreco1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.checkManterPreco1.Location = new System.Drawing.Point(220, 156);
+            this.checkManterPreco1.Name = "checkManterPreco1";
+            this.checkManterPreco1.Size = new System.Drawing.Size(100, 19);
+            this.checkManterPreco1.TabIndex = 42;
+            this.checkManterPreco1.Text = "Manter Preço ";
+            this.checkManterPreco1.UseVisualStyleBackColor = true;
             // 
-            // checkBoxManterpreco
+            // checkBoxManterpreco2
             // 
-            this.checkBoxManterpreco.AutoSize = true;
-            this.checkBoxManterpreco.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.checkBoxManterpreco.Location = new System.Drawing.Point(220, 185);
-            this.checkBoxManterpreco.Name = "checkBoxManterpreco";
-            this.checkBoxManterpreco.Size = new System.Drawing.Size(97, 19);
-            this.checkBoxManterpreco.TabIndex = 41;
-            this.checkBoxManterpreco.Text = "Manter Preço";
-            this.checkBoxManterpreco.UseVisualStyleBackColor = true;
+            this.checkBoxManterpreco2.AutoSize = true;
+            this.checkBoxManterpreco2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.checkBoxManterpreco2.Location = new System.Drawing.Point(220, 185);
+            this.checkBoxManterpreco2.Name = "checkBoxManterpreco2";
+            this.checkBoxManterpreco2.Size = new System.Drawing.Size(97, 19);
+            this.checkBoxManterpreco2.TabIndex = 41;
+            this.checkBoxManterpreco2.Text = "Manter Preço";
+            this.checkBoxManterpreco2.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // textIDForncGeral
             // 
-            this.textBox3.Location = new System.Drawing.Point(708, 179);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 40;
+            this.textIDForncGeral.Location = new System.Drawing.Point(708, 179);
+            this.textIDForncGeral.Name = "textIDForncGeral";
+            this.textIDForncGeral.Size = new System.Drawing.Size(100, 23);
+            this.textIDForncGeral.TabIndex = 40;
             // 
             // label14
             // 
@@ -349,13 +363,13 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.label14.TabIndex = 39;
             this.label14.Text = "ID Fornc.";
             // 
-            // textBox4
+            // textFornecedorGeral
             // 
-            this.textBox4.Location = new System.Drawing.Point(708, 141);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 38;
+            this.textFornecedorGeral.Location = new System.Drawing.Point(708, 141);
+            this.textFornecedorGeral.Name = "textFornecedorGeral";
+            this.textFornecedorGeral.ReadOnly = true;
+            this.textFornecedorGeral.Size = new System.Drawing.Size(100, 23);
+            this.textFornecedorGeral.TabIndex = 38;
             // 
             // label15
             // 
@@ -367,12 +381,12 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.label15.TabIndex = 37;
             this.label15.Text = "Fornecedor";
             // 
-            // textBox5
+            // textCustomedioGeral
             // 
-            this.textBox5.Location = new System.Drawing.Point(108, 150);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 23);
-            this.textBox5.TabIndex = 36;
+            this.textCustomedioGeral.Location = new System.Drawing.Point(108, 150);
+            this.textCustomedioGeral.Name = "textCustomedioGeral";
+            this.textCustomedioGeral.Size = new System.Drawing.Size(100, 23);
+            this.textCustomedioGeral.TabIndex = 36;
             // 
             // label16
             // 
@@ -384,12 +398,12 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.label16.TabIndex = 35;
             this.label16.Text = "Custo Medio";
             // 
-            // textBox6
+            // textValortotalGeral
             // 
-            this.textBox6.Location = new System.Drawing.Point(108, 179);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 23);
-            this.textBox6.TabIndex = 34;
+            this.textValortotalGeral.Location = new System.Drawing.Point(108, 179);
+            this.textValortotalGeral.Name = "textValortotalGeral";
+            this.textValortotalGeral.Size = new System.Drawing.Size(100, 23);
+            this.textValortotalGeral.TabIndex = 34;
             // 
             // label17
             // 
@@ -401,10 +415,10 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.label17.TabIndex = 33;
             this.label17.Text = "Valor Total";
             // 
-            // comboBox1
+            // comboUDMGeral
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboUDMGeral.FormattingEnabled = true;
+            this.comboUDMGeral.Items.AddRange(new object[] {
             "",
             "LITRO",
             "LATA",
@@ -417,10 +431,10 @@ namespace Projeto_Integrador_Construção_do_Sistema
             "FARDO",
             "DUZIA",
             "PEÇA"});
-            this.comboBox1.Location = new System.Drawing.Point(708, 78);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 23);
-            this.comboBox1.TabIndex = 32;
+            this.comboUDMGeral.Location = new System.Drawing.Point(708, 78);
+            this.comboUDMGeral.Name = "comboUDMGeral";
+            this.comboUDMGeral.Size = new System.Drawing.Size(100, 23);
+            this.comboUDMGeral.TabIndex = 32;
             // 
             // label18
             // 
@@ -432,12 +446,12 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.label18.TabIndex = 31;
             this.label18.Text = "Unidade De Medida";
             // 
-            // textBox7
+            // textQuantidadeGeral
             // 
-            this.textBox7.Location = new System.Drawing.Point(708, 19);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 23);
-            this.textBox7.TabIndex = 30;
+            this.textQuantidadeGeral.Location = new System.Drawing.Point(708, 19);
+            this.textQuantidadeGeral.Name = "textQuantidadeGeral";
+            this.textQuantidadeGeral.Size = new System.Drawing.Size(100, 23);
+            this.textQuantidadeGeral.TabIndex = 30;
             // 
             // label19
             // 
@@ -449,12 +463,12 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.label19.TabIndex = 29;
             this.label19.Text = "Quantidade";
             // 
-            // textBox8
+            // textMarcaGeral
             // 
-            this.textBox8.Location = new System.Drawing.Point(708, 49);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 23);
-            this.textBox8.TabIndex = 28;
+            this.textMarcaGeral.Location = new System.Drawing.Point(708, 49);
+            this.textMarcaGeral.Name = "textMarcaGeral";
+            this.textMarcaGeral.Size = new System.Drawing.Size(100, 23);
+            this.textMarcaGeral.TabIndex = 28;
             // 
             // label20
             // 
@@ -466,12 +480,12 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.label20.TabIndex = 27;
             this.label20.Text = "Marca";
             // 
-            // textBox9
+            // textDescGeral
             // 
-            this.textBox9.Location = new System.Drawing.Point(108, 75);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 23);
-            this.textBox9.TabIndex = 9;
+            this.textDescGeral.Location = new System.Drawing.Point(108, 75);
+            this.textDescGeral.Name = "textDescGeral";
+            this.textDescGeral.Size = new System.Drawing.Size(100, 23);
+            this.textDescGeral.TabIndex = 9;
             // 
             // label21
             // 
@@ -483,12 +497,12 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.label21.TabIndex = 8;
             this.label21.Text = "Descrição";
             // 
-            // textBox10
+            // textIDgeral
             // 
-            this.textBox10.Location = new System.Drawing.Point(108, 13);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 23);
-            this.textBox10.TabIndex = 7;
+            this.textIDgeral.Location = new System.Drawing.Point(108, 13);
+            this.textIDgeral.Name = "textIDgeral";
+            this.textIDgeral.Size = new System.Drawing.Size(100, 23);
+            this.textIDgeral.TabIndex = 7;
             // 
             // label22
             // 
@@ -529,7 +543,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(847, 457);
+            this.tabPage3.Size = new System.Drawing.Size(852, 457);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Outras Infos.";
             // 
@@ -769,15 +783,6 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.label1.TabIndex = 14;
             this.label1.Text = "Fornecedor";
             // 
-            // buttonExcluir
-            // 
-            this.buttonExcluir.Location = new System.Drawing.Point(189, 245);
-            this.buttonExcluir.Name = "buttonExcluir";
-            this.buttonExcluir.Size = new System.Drawing.Size(75, 23);
-            this.buttonExcluir.TabIndex = 61;
-            this.buttonExcluir.Text = "Excluir";
-            this.buttonExcluir.UseVisualStyleBackColor = true;
-            // 
             // NewProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -803,7 +808,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonEmitirRelatorio;
         private System.Windows.Forms.Button buttonGravarGeral;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
@@ -816,31 +821,31 @@ namespace Projeto_Integrador_Construção_do_Sistema
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCustoMedio;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnValorTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn Columnornecedor;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonAtualizar;
+        private System.Windows.Forms.Button buttonEditar;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textNomegeral;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBoxManterpreco;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.CheckBox checkManterPreco1;
+        private System.Windows.Forms.CheckBox checkBoxManterpreco2;
+        private System.Windows.Forms.TextBox textIDForncGeral;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textFornecedorGeral;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textCustomedioGeral;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textValortotalGeral;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboUDMGeral;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textQuantidadeGeral;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textMarcaGeral;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textDescGeral;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textIDgeral;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label12;
