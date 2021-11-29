@@ -40,6 +40,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnDescricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCategoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnQuantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnCustoMedio = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,11 +75,11 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textNomeCategoria = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textDescCategoria = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textIdCategoria = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonSalvarFornecedor = new System.Windows.Forms.Button();
             this.maskedTelefone2Forn = new System.Windows.Forms.MaskedTextBox();
@@ -114,14 +115,14 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.panel1.Controls.Add(this.buttonEmitirRelatorio);
             this.panel1.Controls.Add(this.buttonGravarGeral);
             this.panel1.Controls.Add(this.tabControl1);
-            this.panel1.Location = new System.Drawing.Point(3, 12);
+            this.panel1.Location = new System.Drawing.Point(2, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(868, 516);
+            this.panel1.Size = new System.Drawing.Size(956, 516);
             this.panel1.TabIndex = 0;
             // 
             // buttonEmitirRelatorio
             // 
-            this.buttonEmitirRelatorio.Location = new System.Drawing.Point(732, 491);
+            this.buttonEmitirRelatorio.Location = new System.Drawing.Point(829, 488);
             this.buttonEmitirRelatorio.Name = "buttonEmitirRelatorio";
             this.buttonEmitirRelatorio.Size = new System.Drawing.Size(98, 22);
             this.buttonEmitirRelatorio.TabIndex = 52;
@@ -131,7 +132,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             // buttonGravarGeral
             // 
-            this.buttonGravarGeral.Location = new System.Drawing.Point(24, 490);
+            this.buttonGravarGeral.Location = new System.Drawing.Point(28, 487);
             this.buttonGravarGeral.Name = "buttonGravarGeral";
             this.buttonGravarGeral.Size = new System.Drawing.Size(75, 23);
             this.buttonGravarGeral.TabIndex = 60;
@@ -146,10 +147,10 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabControl1.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
-            this.tabControl1.Location = new System.Drawing.Point(5, 3);
+            this.tabControl1.Location = new System.Drawing.Point(4, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(860, 485);
+            this.tabControl1.Size = new System.Drawing.Size(952, 479);
             this.tabControl1.TabIndex = 42;
             // 
             // tabPage1
@@ -187,13 +188,13 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(852, 457);
+            this.tabPage1.Size = new System.Drawing.Size(944, 451);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Info. Gerais";
             // 
             // buttonExcluir
             // 
-            this.buttonExcluir.Location = new System.Drawing.Point(189, 245);
+            this.buttonExcluir.Location = new System.Drawing.Point(180, 241);
             this.buttonExcluir.Name = "buttonExcluir";
             this.buttonExcluir.Size = new System.Drawing.Size(75, 23);
             this.buttonExcluir.TabIndex = 61;
@@ -205,7 +206,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.LightCyan;
             this.pictureBox1.Image = global::Projeto_Integrador_Construção_do_Sistema.Properties.Resources.logoBD;
-            this.pictureBox1.Location = new System.Drawing.Point(821, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(911, 7);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(26, 29);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -220,15 +221,16 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.ColumnID,
             this.ColumnNome,
             this.ColumnDescricao,
+            this.ColumnCategoria,
             this.ColumnQuantidade,
             this.ColumnMarca,
             this.ColumnCustoMedio,
             this.ColumnValorTotal,
             this.Columnornecedor});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 274);
+            this.dataGridView1.Location = new System.Drawing.Point(1, 270);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(847, 176);
+            this.dataGridView1.Size = new System.Drawing.Size(943, 179);
             this.dataGridView1.TabIndex = 59;
             // 
             // ColumnID
@@ -245,6 +247,11 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.ColumnDescricao.HeaderText = "Descrição";
             this.ColumnDescricao.Name = "ColumnDescricao";
+            // 
+            // ColumnCategoria
+            // 
+            this.ColumnCategoria.HeaderText = "Categoria";
+            this.ColumnCategoria.Name = "ColumnCategoria";
             // 
             // ColumnQuantidade
             // 
@@ -273,7 +280,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             // buttonAtualizar
             // 
-            this.buttonAtualizar.Location = new System.Drawing.Point(108, 245);
+            this.buttonAtualizar.Location = new System.Drawing.Point(99, 241);
             this.buttonAtualizar.Name = "buttonAtualizar";
             this.buttonAtualizar.Size = new System.Drawing.Size(75, 23);
             this.buttonAtualizar.TabIndex = 58;
@@ -283,7 +290,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             // buttonEditar
             // 
-            this.buttonEditar.Location = new System.Drawing.Point(28, 245);
+            this.buttonEditar.Location = new System.Drawing.Point(19, 241);
             this.buttonEditar.Name = "buttonEditar";
             this.buttonEditar.Size = new System.Drawing.Size(75, 23);
             this.buttonEditar.TabIndex = 57;
@@ -296,15 +303,15 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.panel4.BackColor = System.Drawing.Color.MediumTurquoise;
             this.panel4.Location = new System.Drawing.Point(0, 225);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(863, 10);
+            this.panel4.Size = new System.Drawing.Size(954, 10);
             this.panel4.TabIndex = 56;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.panel5.Location = new System.Drawing.Point(1, 118);
+            this.panel5.Location = new System.Drawing.Point(1, 107);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(862, 10);
+            this.panel5.Size = new System.Drawing.Size(953, 10);
             this.panel5.TabIndex = 55;
             // 
             // textNomegeral
@@ -348,7 +355,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             // textIDForncGeral
             // 
-            this.textIDForncGeral.Location = new System.Drawing.Point(708, 179);
+            this.textIDForncGeral.Location = new System.Drawing.Point(787, 179);
             this.textIDForncGeral.Name = "textIDForncGeral";
             this.textIDForncGeral.Size = new System.Drawing.Size(100, 23);
             this.textIDForncGeral.TabIndex = 40;
@@ -357,7 +364,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.label14.AutoSize = true;
             this.label14.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label14.Location = new System.Drawing.Point(596, 185);
+            this.label14.Location = new System.Drawing.Point(670, 182);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(54, 15);
             this.label14.TabIndex = 39;
@@ -365,7 +372,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             // textFornecedorGeral
             // 
-            this.textFornecedorGeral.Location = new System.Drawing.Point(708, 141);
+            this.textFornecedorGeral.Location = new System.Drawing.Point(787, 141);
             this.textFornecedorGeral.Name = "textFornecedorGeral";
             this.textFornecedorGeral.ReadOnly = true;
             this.textFornecedorGeral.Size = new System.Drawing.Size(100, 23);
@@ -375,7 +382,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.label15.AutoSize = true;
             this.label15.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label15.Location = new System.Drawing.Point(596, 147);
+            this.label15.Location = new System.Drawing.Point(670, 144);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(67, 15);
             this.label15.TabIndex = 37;
@@ -422,16 +429,16 @@ namespace Projeto_Integrador_Construção_do_Sistema
             "",
             "LITRO",
             "LATA",
-            "MG",
+            "Mg",
             "G",
-            "KG",
-            "CM",
+            "Kg",
+            "Cm",
             "GRAMAS",
             "GF",
             "FARDO",
             "DUZIA",
             "PEÇA"});
-            this.comboUDMGeral.Location = new System.Drawing.Point(708, 78);
+            this.comboUDMGeral.Location = new System.Drawing.Point(787, 78);
             this.comboUDMGeral.Name = "comboUDMGeral";
             this.comboUDMGeral.Size = new System.Drawing.Size(100, 23);
             this.comboUDMGeral.TabIndex = 32;
@@ -440,7 +447,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.label18.AutoSize = true;
             this.label18.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label18.Location = new System.Drawing.Point(596, 87);
+            this.label18.Location = new System.Drawing.Point(670, 81);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(111, 15);
             this.label18.TabIndex = 31;
@@ -448,7 +455,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             // textQuantidadeGeral
             // 
-            this.textQuantidadeGeral.Location = new System.Drawing.Point(708, 19);
+            this.textQuantidadeGeral.Location = new System.Drawing.Point(787, 19);
             this.textQuantidadeGeral.Name = "textQuantidadeGeral";
             this.textQuantidadeGeral.Size = new System.Drawing.Size(100, 23);
             this.textQuantidadeGeral.TabIndex = 30;
@@ -457,7 +464,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.label19.AutoSize = true;
             this.label19.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label19.Location = new System.Drawing.Point(596, 25);
+            this.label19.Location = new System.Drawing.Point(670, 19);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(69, 15);
             this.label19.TabIndex = 29;
@@ -465,7 +472,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             // textMarcaGeral
             // 
-            this.textMarcaGeral.Location = new System.Drawing.Point(708, 49);
+            this.textMarcaGeral.Location = new System.Drawing.Point(787, 49);
             this.textMarcaGeral.Name = "textMarcaGeral";
             this.textMarcaGeral.Size = new System.Drawing.Size(100, 23);
             this.textMarcaGeral.TabIndex = 28;
@@ -474,7 +481,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.label20.AutoSize = true;
             this.label20.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label20.Location = new System.Drawing.Point(596, 55);
+            this.label20.Location = new System.Drawing.Point(670, 49);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(40, 15);
             this.label20.TabIndex = 27;
@@ -501,6 +508,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.textIDgeral.Location = new System.Drawing.Point(108, 13);
             this.textIDgeral.Name = "textIDgeral";
+            this.textIDgeral.ReadOnly = true;
             this.textIDgeral.Size = new System.Drawing.Size(100, 23);
             this.textIDgeral.TabIndex = 7;
             // 
@@ -519,11 +527,11 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.tabPage3.BackColor = System.Drawing.Color.LightCyan;
             this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Controls.Add(this.label9);
-            this.tabPage3.Controls.Add(this.textBox1);
+            this.tabPage3.Controls.Add(this.textNomeCategoria);
             this.tabPage3.Controls.Add(this.label10);
-            this.tabPage3.Controls.Add(this.textBox14);
+            this.tabPage3.Controls.Add(this.textDescCategoria);
             this.tabPage3.Controls.Add(this.label11);
-            this.tabPage3.Controls.Add(this.textBox15);
+            this.tabPage3.Controls.Add(this.textIdCategoria);
             this.tabPage3.Controls.Add(this.panel2);
             this.tabPage3.Controls.Add(this.buttonSalvarFornecedor);
             this.tabPage3.Controls.Add(this.maskedTelefone2Forn);
@@ -543,7 +551,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(852, 457);
+            this.tabPage3.Size = new System.Drawing.Size(944, 451);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Outras Infos.";
             // 
@@ -568,12 +576,12 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.label9.TabIndex = 68;
             this.label9.Text = "ID";
             // 
-            // textBox1
+            // textNomeCategoria
             // 
-            this.textBox1.Location = new System.Drawing.Point(106, 353);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 67;
+            this.textNomeCategoria.Location = new System.Drawing.Point(106, 353);
+            this.textNomeCategoria.Name = "textNomeCategoria";
+            this.textNomeCategoria.Size = new System.Drawing.Size(100, 23);
+            this.textNomeCategoria.TabIndex = 67;
             // 
             // label10
             // 
@@ -585,13 +593,13 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.label10.TabIndex = 66;
             this.label10.Text = "Nome";
             // 
-            // textBox14
+            // textDescCategoria
             // 
-            this.textBox14.Location = new System.Drawing.Point(348, 328);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(332, 106);
-            this.textBox14.TabIndex = 65;
+            this.textDescCategoria.Location = new System.Drawing.Point(348, 328);
+            this.textDescCategoria.Multiline = true;
+            this.textDescCategoria.Name = "textDescCategoria";
+            this.textDescCategoria.Size = new System.Drawing.Size(332, 106);
+            this.textDescCategoria.TabIndex = 65;
             // 
             // label11
             // 
@@ -603,12 +611,13 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.label11.TabIndex = 64;
             this.label11.Text = "Descrição";
             // 
-            // textBox15
+            // textIdCategoria
             // 
-            this.textBox15.Location = new System.Drawing.Point(106, 325);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 23);
-            this.textBox15.TabIndex = 63;
+            this.textIdCategoria.Location = new System.Drawing.Point(106, 325);
+            this.textIdCategoria.Name = "textIdCategoria";
+            this.textIdCategoria.ReadOnly = true;
+            this.textIdCategoria.Size = new System.Drawing.Size(100, 23);
+            this.textIdCategoria.TabIndex = 63;
             // 
             // panel2
             // 
@@ -626,6 +635,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.buttonSalvarFornecedor.TabIndex = 61;
             this.buttonSalvarFornecedor.Text = "Salvar";
             this.buttonSalvarFornecedor.UseVisualStyleBackColor = true;
+            this.buttonSalvarFornecedor.Click += new System.EventHandler(this.buttonSalvarFornecedor_Click);
             // 
             // maskedTelefone2Forn
             // 
@@ -729,6 +739,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.textIDForn.Location = new System.Drawing.Point(106, 63);
             this.textIDForn.Name = "textIDForn";
+            this.textIDForn.ReadOnly = true;
             this.textIDForn.Size = new System.Drawing.Size(100, 23);
             this.textIDForn.TabIndex = 19;
             // 
@@ -788,7 +799,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(929, 529);
+            this.ClientSize = new System.Drawing.Size(982, 529);
             this.Controls.Add(this.panel1);
             this.Name = "NewProdutos";
             this.Text = "Novo Produto";
@@ -813,14 +824,6 @@ namespace Projeto_Integrador_Construção_do_Sistema
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDescricao;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnQuantidade;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMarca;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCustoMedio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnValorTotal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Columnornecedor;
         private System.Windows.Forms.Button buttonAtualizar;
         private System.Windows.Forms.Button buttonEditar;
         private System.Windows.Forms.Panel panel4;
@@ -850,11 +853,11 @@ namespace Projeto_Integrador_Construção_do_Sistema
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textNomeCategoria;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textDescCategoria;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textIdCategoria;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button buttonSalvarFornecedor;
         private System.Windows.Forms.MaskedTextBox maskedTelefone2Forn;
@@ -878,5 +881,14 @@ namespace Projeto_Integrador_Construção_do_Sistema
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonExcluir;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDescricao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCategoria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnQuantidade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMarca;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCustoMedio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnValorTotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Columnornecedor;
     }
 }

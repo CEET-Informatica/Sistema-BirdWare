@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projeto_Integrador_Construção_do_Sistema.Controlle;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
 {
     public partial class Login : Form
     {
+        Usuario x = new Usuario();
         public Login()
         {
             InitializeComponent();
@@ -19,6 +21,16 @@ namespace Projeto_Integrador_Construção_do_Sistema
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
+            if (textUsuarioLogin.Text == x.Usuario && int.Parse(textSenhaLogin.Text) == x.Senha)
+            {
+                MessageBox.Show("Seja Bem Vindo(a)");
+            }
+            else
+            {
+                if (textUsuarioLogin.Text != null && textSenhaLogin.Text != null)
+                    MessageBox.Show("Usuario ou Senha Incorreto");
+
+            }
             this.Hide();
             Home f = new Home();
             f.Closed += (s, args) => this.Close();

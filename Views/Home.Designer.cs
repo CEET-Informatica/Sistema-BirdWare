@@ -63,7 +63,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 646);
+            this.panelMenu.Size = new System.Drawing.Size(220, 671);
             this.panelMenu.TabIndex = 2;
             // 
             // iconButtonFinalizar
@@ -78,7 +78,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.iconButtonFinalizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonFinalizar.IconSize = 32;
             this.iconButtonFinalizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonFinalizar.Location = new System.Drawing.Point(0, 586);
+            this.iconButtonFinalizar.Location = new System.Drawing.Point(0, 611);
             this.iconButtonFinalizar.Name = "iconButtonFinalizar";
             this.iconButtonFinalizar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconButtonFinalizar.Size = new System.Drawing.Size(220, 60);
@@ -208,7 +208,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(857, 75);
+            this.panelTitleBar.Size = new System.Drawing.Size(962, 75);
             this.panelTitleBar.TabIndex = 8;
             // 
             // panelShadow
@@ -217,7 +217,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(220, 75);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(857, 9);
+            this.panelShadow.Size = new System.Drawing.Size(962, 9);
             this.panelShadow.TabIndex = 9;
             // 
             // panelDesktop
@@ -228,35 +228,35 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 84);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(857, 562);
+            this.panelDesktop.Size = new System.Drawing.Size(962, 587);
             this.panelDesktop.TabIndex = 10;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Square721 BT", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(252, 400);
+            this.label1.Location = new System.Drawing.Point(310, 409);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(369, 42);
-            this.label1.TabIndex = 7;
+            this.label1.TabIndex = 13;
             this.label1.Text = "SISTEMA BIRDWARE";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.LightCyan;
             this.pictureBox1.Image = global::Projeto_Integrador_Construção_do_Sistema.Properties.Resources.logoBD;
-            this.pictureBox1.Location = new System.Drawing.Point(311, 116);
+            this.pictureBox1.Location = new System.Drawing.Point(369, 125);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(254, 256);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1077, 646);
+            this.ClientSize = new System.Drawing.Size(1182, 671);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
@@ -289,8 +289,8 @@ namespace Projeto_Integrador_Construção_do_Sistema
         private System.Windows.Forms.Panel panelShadow;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Panel panelDesktop;
+        private FontAwesome.Sharp.IconButton iconButtonFinalizar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private FontAwesome.Sharp.IconButton iconButtonFinalizar;
     }
 }

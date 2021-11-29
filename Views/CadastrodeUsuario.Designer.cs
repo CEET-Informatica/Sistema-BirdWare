@@ -39,7 +39,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.labelTelefone = new System.Windows.Forms.Label();
             this.labelID = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textConfirmaSenha = new System.Windows.Forms.TextBox();
             this.labelconfirmasenha = new System.Windows.Forms.Label();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -136,13 +136,13 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.button1.Text = "Cadastrar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // textConfirmaSenha
             // 
-            this.textBox1.Location = new System.Drawing.Point(161, 230);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 58;
+            this.textConfirmaSenha.Location = new System.Drawing.Point(161, 230);
+            this.textConfirmaSenha.Name = "textConfirmaSenha";
+            this.textConfirmaSenha.PasswordChar = '*';
+            this.textConfirmaSenha.Size = new System.Drawing.Size(100, 23);
+            this.textConfirmaSenha.TabIndex = 58;
             // 
             // labelconfirmasenha
             // 
@@ -171,7 +171,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(307, 294);
             this.Controls.Add(this.buttonLogin);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textConfirmaSenha);
             this.Controls.Add(this.labelconfirmasenha);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textSenhaCadastro);
@@ -202,7 +202,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
         private System.Windows.Forms.Label labelTelefone;
         private System.Windows.Forms.Label labelID;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textConfirmaSenha;
         private System.Windows.Forms.Label labelconfirmasenha;
         private System.Windows.Forms.Button buttonLogin;
     }

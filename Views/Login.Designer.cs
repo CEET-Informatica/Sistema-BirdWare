@@ -31,8 +31,8 @@ namespace Projeto_Integrador_Construção_do_Sistema
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textSenhaLogin = new System.Windows.Forms.TextBox();
+            this.textUsuarioLogin = new System.Windows.Forms.TextBox();
             this.buttonCadastrodeUsuario = new System.Windows.Forms.Button();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -60,20 +60,20 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.label2.TabIndex = 2;
             this.label2.Text = "Senha:";
             // 
-            // textBox1
+            // textSenhaLogin
             // 
-            this.textBox1.Location = new System.Drawing.Point(159, 57);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 3;
+            this.textSenhaLogin.Location = new System.Drawing.Point(159, 57);
+            this.textSenhaLogin.Name = "textSenhaLogin";
+            this.textSenhaLogin.PasswordChar = '*';
+            this.textSenhaLogin.Size = new System.Drawing.Size(100, 23);
+            this.textSenhaLogin.TabIndex = 3;
             // 
-            // textBox2
+            // textUsuarioLogin
             // 
-            this.textBox2.Location = new System.Drawing.Point(159, 27);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 4;
+            this.textUsuarioLogin.Location = new System.Drawing.Point(159, 27);
+            this.textUsuarioLogin.Name = "textUsuarioLogin";
+            this.textUsuarioLogin.Size = new System.Drawing.Size(100, 23);
+            this.textUsuarioLogin.TabIndex = 4;
             // 
             // buttonCadastrodeUsuario
             // 
@@ -132,8 +132,8 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.Controls.Add(this.label3);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.buttonCadastrodeUsuario);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textUsuarioLogin);
+            this.Controls.Add(this.textSenhaLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Login";
@@ -147,8 +147,8 @@ namespace Projeto_Integrador_Construção_do_Sistema
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textSenhaLogin;
+        private System.Windows.Forms.TextBox textUsuarioLogin;
         private System.Windows.Forms.Button buttonCadastrodeUsuario;
         private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.Label label3;
