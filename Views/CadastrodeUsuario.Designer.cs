@@ -38,7 +38,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.labelNomeCliente = new System.Windows.Forms.Label();
             this.labelTelefone = new System.Windows.Forms.Label();
             this.labelID = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonCadastrar = new System.Windows.Forms.Button();
             this.textConfirmaSenha = new System.Windows.Forms.TextBox();
             this.labelconfirmasenha = new System.Windows.Forms.Label();
             this.buttonLogin = new System.Windows.Forms.Button();
@@ -94,6 +94,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.textID.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.textID.Location = new System.Drawing.Point(161, 52);
             this.textID.Name = "textID";
+            this.textID.ReadOnly = true;
             this.textID.Size = new System.Drawing.Size(100, 23);
             this.textID.TabIndex = 51;
             // 
@@ -127,14 +128,15 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.labelID.TabIndex = 48;
             this.labelID.Text = "ID:";
             // 
-            // button1
+            // buttonCadastrar
             // 
-            this.button1.Location = new System.Drawing.Point(149, 259);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 47;
-            this.button1.Text = "Cadastrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonCadastrar.Location = new System.Drawing.Point(149, 259);
+            this.buttonCadastrar.Name = "buttonCadastrar";
+            this.buttonCadastrar.Size = new System.Drawing.Size(75, 23);
+            this.buttonCadastrar.TabIndex = 47;
+            this.buttonCadastrar.Text = "Cadastrar";
+            this.buttonCadastrar.UseVisualStyleBackColor = true;
+            this.buttonCadastrar.Click += new System.EventHandler(this.buttonCadastrar_Click);
             // 
             // textConfirmaSenha
             // 
@@ -182,7 +184,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.Controls.Add(this.labelNomeCliente);
             this.Controls.Add(this.labelTelefone);
             this.Controls.Add(this.labelID);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonCadastrar);
             this.Name = "CadastrodeUsuario";
             this.Text = "CadastrodeUsuario";
             this.ResumeLayout(false);
@@ -201,7 +203,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
         private System.Windows.Forms.Label labelNomeCliente;
         private System.Windows.Forms.Label labelTelefone;
         private System.Windows.Forms.Label labelID;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonCadastrar;
         private System.Windows.Forms.TextBox textConfirmaSenha;
         private System.Windows.Forms.Label labelconfirmasenha;
         private System.Windows.Forms.Button buttonLogin;
