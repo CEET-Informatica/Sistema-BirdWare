@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto Integrador-Construção do Sistema", "Projeto Integrador-Construção do Sistema.csproj", "{8CBE4B80-5222-401A-87B5-8271E1D857B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Birdware", "..\Birdware\Birdware.csproj", "{6B1F5AC0-33C1-4550-AB34-B675548C036C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{8CBE4B80-5222-401A-87B5-8271E1D857B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CBE4B80-5222-401A-87B5-8271E1D857B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CBE4B80-5222-401A-87B5-8271E1D857B2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6B1F5AC0-33C1-4550-AB34-B675548C036C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B1F5AC0-33C1-4550-AB34-B675548C036C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B1F5AC0-33C1-4550-AB34-B675548C036C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B1F5AC0-33C1-4550-AB34-B675548C036C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

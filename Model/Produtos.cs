@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projeto_Integrador_Construção_do_Sistema.Model;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -14,10 +15,9 @@ namespace Projeto_Integrador_Construção_do_Sistema.Controlle
         public string UnidadedeMedidida { get; set; }
         public int CustoMedio { get; set; }
         public int ValorTotal { get; set; }
-        public int IDFornc { get; set; }
-        //Categoria
-        public int IDCategoria { get; set; }
-        public string NomeCategoria { get; set; }
-        public string ObservacaoCategoria { get; set; }
+
+        public int CategoriaId { get; set; }
+        public Categoria categoria { get; set; }
+
     }
 }
